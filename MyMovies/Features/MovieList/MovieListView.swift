@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct MovieListView: View {
-    //@StateObject private var viewModel = MovieListViewModel()
+    @StateObject private var viewModel = MovieListViewModel()
     @State private var movieDetail: MovieData?
 
     var body: some View {

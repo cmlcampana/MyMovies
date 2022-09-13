@@ -26,7 +26,7 @@ struct MoviesLoadedView: View {
                             )
                         }.background(
                             LinearGradient(
-                                gradient: Gradient(colors: [.strongBlue, .lightBlue, .shadowBlue]),
+                                gradient: Gradient(colors: [.strongBlue, .lightBlue]),
                                 startPoint: .top,
                                 endPoint: .bottom
                             )

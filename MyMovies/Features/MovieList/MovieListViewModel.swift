@@ -15,7 +15,7 @@ final class MovieListViewModel: ObservableObject {
 
     init(
         repository: MovieListRepositoryProtocol = MovieListRepository(),
-        movieType: MovieType
+        movieType: MovieType = .popular
     ) {
         self.repository = repository
         self.movieType = movieType

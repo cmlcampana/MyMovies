@@ -8,7 +8,7 @@ struct SheetView<Content: View>: View {
     var body: some View {
         ZStack {
             Rectangle()
-                .foregroundColor(.strongGray)
+                .foregroundColor(.lightBlue)
 
             Text(title)
                 .font(.system(size: 16).bold())

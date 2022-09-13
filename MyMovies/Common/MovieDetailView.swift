@@ -15,9 +15,13 @@ struct MovieDetailView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                 } else if phase.error != nil {
-                    Color.red // Indicates an error.
+                    Image(systemName: "xmark.circle")
+                        .resizable()
+                        .foregroundColor(.lightGray)
+                        .frame(width: 80, height: 80)
                 } else {
-                    Color.blue // Acts as a placeholder.
+                    LottieView(name: "loading", loopMode: .loop)
+                        .frame(width: 150, height: 150)
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: 350)
